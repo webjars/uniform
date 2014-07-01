@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>uniform</artifactId>
-    <version>2.1.2-SNAPSHOT</version>
+    <version>2.1.2</version>
     <name>Uniform</name>
     <description>WebJar for Uniform</description>
     <url>http://webjars.org</url>
@@ -53,7 +53,7 @@
         <url>http://github.com/webjars/uniform</url>
         <connection>scm:git:https://github.com/webjars/uniform.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/uniform.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>uniform-2.1.2</tag>
     </scm>
     
     <dependencies>
@@ -98,7 +98,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/uniform-${upstream.version}" includes="jquery.* themes/"/>
+                                    <fileset dir="${project.build.directory}/uniform-${upstream.version}" includes="jquery.* themes/" />
                                 </move>
                             </target>
                         </configuration>
