@@ -24,10 +24,12 @@
         <requirejs>
             {
                 "paths": {
-                    "uniform": "uniform"
+                    "uniform": "jquery.uniform",
+                    "uniform-min": "jquery.uniform.min"
                 },
                 "shim": {
-                    "uniform": ["jquery"]
+                    "uniform": ["jquery"],
+                    "uniform-min": ["jquery"]
                 }
             }
         </requirejs>
